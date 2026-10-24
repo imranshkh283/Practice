@@ -31,3 +31,20 @@ function findMaxNumber($arr)
 
     return $max;
 }
+
+/**
+ * Sorts the array in ascending order and returns the maximum number.
+ *
+ * Time Complexity: O(n log n)
+ * Space Complexity: Depends on PHP's sort implementation.
+ *
+ * @param array $arr Array of numbers.
+ * @return int|float Maximum number in the array.
+ */
+function sortAscending($arr)
+{
+    $cnt = count($arr);
+    $lastIndex = $cnt - 1;
+    sort($arr, SORT_NUMERIC);
+    return $arr[$lastIndex];
+}
