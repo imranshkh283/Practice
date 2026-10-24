@@ -48,3 +48,17 @@ function sortAscending($arr)
     sort($arr, SORT_NUMERIC);
     return $arr[$lastIndex];
 }
+
+/**
+ * Sorts the array in ascending order and returns the maximum number.
+ *
+ * Time Complexity: O(n log n)
+ *
+ * @param array $arr Array of numbers.
+ * @return int|float Maximum number in the array.
+ */
+function sortAsc($arr)
+{
+    sort($arr, SORT_NUMERIC);
+    return $arr[count($arr) - 1];
+}
