@@ -22,7 +22,7 @@ function findMaxNumber($arr)
 {
     $len = count($arr);
     $max = $arr[0];
-    for ($i = 0; $i < $len; $i++) {
+    for ($i = 1; $i < $len; $i++) {
 
         if ($arr[$i] > $max) {
             $max = $arr[$i];
